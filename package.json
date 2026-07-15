@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "ro-crate-excel": "^1.2.1",
+    "ro-crate-html-lite": "github:Language-Research-Technology/ro-crate-html-lite#tabular-merge"
+  }
+}

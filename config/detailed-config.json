@@ -1,0 +1,681 @@
+{
+  "multipage": false,
+  "style": "",
+  "settings": {
+    "maxListItemsWithoutSearch": 20,
+    "showInfoLinks": false,
+    "tabular": true
+  },
+  "root": {
+    "template": "config/tabular-template.html"
+  },
+  "navigationByType": {
+    "http://pcdm.org/models#Collection": [
+      {
+        "uri": "http://schema.org/name",
+        "label": "Collection"
+      },
+      {
+        "uri": "http://schema.org/description",
+        "label": "Description"
+      },
+      {
+        "uri": "http://schema.org/about",
+        "label": "Subjects",
+        "addFacet": true,
+        "facetLabel": "Subject"
+      },
+      {
+        "uri": "http://schema.org/holdingArchive",
+        "label": "Holder"
+      },
+      {
+        "uri": "http://schema.org/itemLocation",
+        "label": "Item Location"
+      }
+    ],
+    "http://schema.org/Person": [
+      {
+        "uri": "http://schema.org/name",
+        "label": "Person"
+      },
+      {
+        "uri": "http://schema.org/accountablePerson",
+        "label": "Involved in Collections"
+      },
+      {
+        "uri": "http://schema.org/author",
+        "label": "Author of Collections"
+      }
+    ],
+    "http://schema.org/Organization": [
+      {
+        "uri": "http://schema.org/name",
+        "label": "Organization"
+      },
+      {
+        "uri": "http://schema.org/holdingArchive",
+        "label": "Collections Held"
+      }
+    ],
+    "http://schema.org/Language": [
+      {
+        "uri": "http://schema.org/name",
+        "label": "Language"
+      },
+      {
+        "uri": "http://schema.org/inLanguage",
+        "label": "Collections with this Language"
+      }
+    ]
+    
+  },
+  "footer": {
+    "text": "Precarious Oral History Collection",
+    "links": [
+      {
+        "label": "About",
+        "modalText": "This catalogue is an initiative of the Precarious Oral Histories Project of the Language Data Commons of Australia (LDaCA) at The Australian National University. It details precarious oral history collections in Australia, with information about each collection provided by collection holders or their authorised representatives. This catalogue aims to raise awareness of the scale and condition of at-risk oral history collections and to encourage initiatives that support their preservation.\n\nPlease note that many of the collections listed are not publicly accessible. To learn more, visit the Precarious Oral Histories Project website."
+      },
+      {
+        "label": "Contact",
+        "url": "mailto:precariousoralhistories@anu.edu.au"
+      }
+    ]
+  },
+  "tabular": {
+    "mainNavType": "",
+    "columnLimit": 5,
+    "searchEnabled": true,
+    "columnSearchEnabled": false,
+    "includeFallbackColumns": true,
+    "sortyBy": "http://schema.org/familyName",
+    "hideColumns": []
+  },
+  "termMapping": {
+    "http://pcdm.org/models#Collection": {
+      "defaultLabel": "RepositoryCollection",
+      "customLabel": "Collection",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "http://pcdm.org/models#hasMember": {
+      "defaultLabel": "hasMember",
+      "customLabel": "Has Member",
+      "customReverseLabel": "Member Of",
+      "hide": true
+    },
+     "http://schema.org/hasPart": {
+      "defaultLabel": "hasPart",
+      "customLabel": "Has Part",
+      "customReverseLabel": "Part Of",
+      "hide": true
+    },
+    "http://pcdm.org/models#memberOf": {
+      "defaultLabel": "memberOf",
+      "customLabel": "Member Of",
+      "customReverseLabel": "Has Member",
+      "hide": true
+    },
+    "http://purl.org/dc/terms/conformsTo": {
+      "defaultLabel": "conformsTo",
+      "customLabel": "Conforms To",
+      "customReverseLabel": "",
+      "hide": true
+    },
+    "http://purl.org/dc/terms/rightsHolder": {
+      "defaultLabel": "rightsHolder",
+      "customLabel": "Rights Holder",
+      "customReverseLabel": "Rights Held By",
+      "hide": true
+    },
+    "http://schema.org/about": {
+      "defaultLabel": "about",
+      "customLabel": "Subject",
+      "customReverseLabel": "Subject Of",
+      "hide": false
+    },
+    "http://schema.org/accountablePerson": {
+      "defaultLabel": "accountablePerson",
+      "customLabel": "Accountable Person",
+      "customReverseLabel": "Accountable For",
+      "hide": false
+    },
+     "http://schema.org/additionalType": {
+      "defaultLabel": "additionalType",
+      "customLabel": "Collection Holder Category",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "http://schema.org/address": {
+      "defaultLabel": "address",
+      "customLabel": "Address",
+      "customReverseLabel": "Address Of",
+      "hide": false
+    },
+    "http://schema.org/author": {
+      "defaultLabel": "author",
+      "customLabel": "Author",
+      "customReverseLabel": "Author Of",
+      "hide": false
+    },
+    "http://schema.org/contentLocation": {
+      "defaultLabel": "contentLocation",
+      "customLabel": "Content Location",
+      "customReverseLabel": "Content Located In",
+      "hide": false
+    },
+    "http://schema.org/CreativeWork": {
+      "defaultLabel": "CreativeWork",
+      "customLabel": "Creative Work",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "http://schema.org/creativeWorkStatus": {
+      "defaultLabel": "creativeWorkStatus",
+      "customLabel": "Collection Status",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "http://schema.org/Dataset": {
+      "defaultLabel": "Dataset",
+      "customLabel": "Dataset",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "http://schema.org/dateCreated": {
+      "defaultLabel": "dateCreated",
+      "customLabel": "Date Created",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "http://schema.org/datePublished": {
+      "defaultLabel": "datePublished",
+      "customLabel": "Date Published",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "http://schema.org/DefinedTerm": {
+      "defaultLabel": "Subject",
+      "customLabel": "Subject",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "http://schema.org/DefinedTermSet": {
+      "defaultLabel": "Subjects",
+      "customLabel": "Subjects",
+      "customReverseLabel": "",
+      "hide": true
+    },
+    "http://schema.org/description": {
+      "defaultLabel": "description",
+      "customLabel": "Description",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "http://schema.org/email": {
+      "defaultLabel": "email",
+      "customLabel": "Email",
+      "customReverseLabel": "Email Contact",
+      "hide": true
+    },
+    "http://schema.org/identifier": {
+      "defaultLabel": "identifier",
+      "customLabel": "Identifier",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "http://schema.org/inDefinedTermSet": {
+      "defaultLabel": "Subjects",
+      "customLabel": "Subjects",
+      "customReverseLabel": "",
+      "hide": true
+    },
+    "http://schema.org/inLanguage": {
+      "defaultLabel": "inLanguage",
+      "customLabel": "Language(s)",
+      "customReverseLabel": "Collections with this Language",
+      "hide": false
+    },
+    "http://schema.org/isAccessibleForFree": {
+      "defaultLabel": "isAccessibleForFree",
+      "customLabel": "Is Accessible For Free",
+      "customReverseLabel": "",
+      "hide": true
+    },
+    "http://schema.org/isBasedOn": {
+      "defaultLabel": "isBasedOn",
+      "customLabel": "Is Based On",
+      "customReverseLabel": "Basis For",
+      "hide": false
+    },
+    "http://schema.org/keywords": {
+      "defaultLabel": "keywords",
+      "customLabel": "Keywords",
+      "customReverseLabel": "Keyword Of",
+      "hide": false
+    },
+    "http://schema.org/Language": {
+      "defaultLabel": "Language",
+      "customLabel": "Language",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "http://schema.org/license": {
+      "defaultLabel": "license",
+      "customLabel": "License",
+      "customReverseLabel": "Licensed As",
+      "hide": false
+    },
+    "http://schema.org/name": {
+      "defaultLabel": "name",
+      "customLabel": "Name",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "http://schema.org/Organization": {
+      "defaultLabel": "Organization",
+      "customLabel": "Organization",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "http://schema.org/Person": {
+      "defaultLabel": "Person",
+      "customLabel": "Person",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "http://schema.org/Place": {
+      "defaultLabel": "Place",
+      "customLabel": "Place",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "http://schema.org/publisher": {
+      "defaultLabel": "publisher",
+      "customLabel": "Publisher",
+      "customReverseLabel": "Publisher Of",
+      "hide": true
+    },
+    "http://schema.org/sameAs": {
+      "defaultLabel": "sameAs",
+      "customLabel": "Same As",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "http://schema.org/temporalCoverage": {
+      "defaultLabel": "temporalCoverage",
+      "customLabel": "Temporal Coverage",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "http://schema.org/url": {
+      "defaultLabel": "url",
+      "customLabel": "Homepage",
+      "customReverseLabel": "Referenced At",
+      "hide": false
+    },
+    "http://schema.org/usageInfo": {
+      "defaultLabel": "usageInfo",
+      "customLabel": "Usage Info",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "https://schema.org/holdingArchive": {
+      "defaultLabel": "holdingArchive",
+      "customLabel": "Holding Archive",
+      "customReverseLabel": "Collection(s) Held",
+      "hide": false
+    },
+    "https://w3id.org/ldac/terms#CollectionProtocol": {
+      "defaultLabel": "ldac:CollectionProtocol",
+      "customLabel": "Collection Protocol",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "https://w3id.org/ldac/terms#DataReuseLicense": {
+      "defaultLabel": "ldac:DataReuseLicense",
+      "customLabel": "Data Reuse License",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "https://w3id.org/ldac/terms#dateFreeText": {
+      "defaultLabel": "dateFreeText",
+      "customLabel": "Date Free Text",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "https://w3id.org/ldac/terms#hasCollectionProtocol": {
+      "defaultLabel": "hasCollectionProtocol",
+      "customLabel": "Has Collection Protocol",
+      "customReverseLabel": "Collection Protocol Of",
+      "hide": false
+    },
+    "https://w3id.org/ro/terms/precarious-oral-history#analogueDigital": {
+      "defaultLabel": "analogueDigital",
+      "customLabel": "Analogue Digital",
+      "customReverseLabel": "",
+      "hide": true
+    },
+    "https://w3id.org/ro/terms/precarious-oral-history#audioFormat": {
+      "defaultLabel": "audioFormat",
+      "customLabel": "Audio Format",
+      "customReverseLabel": "Format Of Audio",
+      "hide": false
+    },
+    "https://w3id.org/ro/terms/precarious-oral-history#audioQuality": {
+      "defaultLabel": "audioQuality",
+      "customLabel": "Audio Quality",
+      "customReverseLabel": "Quality Of Audio For",
+      "hide": false
+    },
+    "https://w3id.org/ro/terms/precarious-oral-history#audiovisualFormat": {
+      "defaultLabel": "audiovisualFormat",
+      "customLabel": "Interview Format",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "https://w3id.org/ro/terms/precarious-oral-history#avFormat": {
+      "defaultLabel": "avFormat",
+      "customLabel": "Audiovisual Format",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "https://w3id.org/ro/terms/precarious-oral-history#avgInterviewLength": {
+      "defaultLabel": "avgInterviewLength",
+      "customLabel": "Average Interview Length",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "https://w3id.org/ro/terms/precarious-oral-history#catalogueListing": {
+      "defaultLabel": "catalogueListing",
+      "customLabel": "Catalogue Listing",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "https://w3id.org/ro/terms/precarious-oral-history#collectionPurpose": {
+      "defaultLabel": "collectionPurpose",
+      "customLabel": "Collection Purpose",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "https://w3id.org/ro/terms/precarious-oral-history#consentForms": {
+      "defaultLabel": "consentForms",
+      "customLabel": "Consent Forms",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "https://w3id.org/ro/terms/precarious-oral-history#consentFutureAccess": {
+      "defaultLabel": "consentFutureAccess",
+      "customLabel": "Consent Future Access",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "https://w3id.org/ro/terms/precarious-oral-history#languageDescription": {
+      "defaultLabel": "languageDescription",
+      "customLabel": "Language Description",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "https://w3id.org/ro/terms/precarious-oral-history#numInterviews": {
+      "defaultLabel": "numInterviews",
+      "customLabel": "Number Of Interviews",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "https://w3id.org/ro/terms/precarious-oral-history#otherInfo": {
+      "defaultLabel": "otherInfo",
+      "customLabel": "Other Info",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "https://w3id.org/ro/terms/precarious-oral-history#outputs": {
+      "defaultLabel": "outputs",
+      "customLabel": "Outputs",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "https://w3id.org/ro/terms/precarious-oral-history#overviews": {
+      "defaultLabel": "overviews",
+      "customLabel": "Overviews",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "https://w3id.org/ro/terms/precarious-oral-history#physicalCondition": {
+      "defaultLabel": "physicalCondition",
+      "customLabel": "Physical Condition",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "https://w3id.org/ro/terms/precarious-oral-history#relatedMaterials": {
+      "defaultLabel": "relatedMaterials",
+      "customLabel": "Related Materials",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "https://w3id.org/ro/terms/precarious-oral-history#storageLocation": {
+      "defaultLabel": "storageLocation",
+      "customLabel": "Storage Location",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "https://w3id.org/ro/terms/precarious-oral-history#timedSummaries": {
+      "defaultLabel": "timedSummaries",
+      "customLabel": "Timed Summaries",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "https://w3id.org/ro/terms/precarious-oral-history#totalHours": {
+      "defaultLabel": "totalHours",
+      "customLabel": "Total Hours",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "https://w3id.org/ro/terms/precarious-oral-history#transcripts": {
+      "defaultLabel": "transcripts",
+      "customLabel": "Transcripts",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "http://schema.org/contributor": {
+      "defaultLabel": "contributor",
+      "customLabel": "Contributor",
+      "customReverseLabel": "Contributor To",
+      "hide": true
+    },
+    "http://schema.org/propertyID": {
+      "defaultLabel": "propertyID",
+      "customLabel": "Property ID",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "http://schema.org/PropertyValue": {
+      "defaultLabel": "PropertyValue",
+      "customLabel": "Property Value",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "http://schema.org/value": {
+      "defaultLabel": "value",
+      "customLabel": "Value",
+      "customReverseLabel": "",
+      "hide": false
+    },
+    "https://w3id.org/ro/terms/precarious-oral-history#firstNationsFocus": {
+      "defaultLabel": "firstNationsFocus",
+      "customLabel": "First Nations Focus",
+      "customReverseLabel": "",
+      "hide": true
+    },
+    "https://w3id.org/ro/terms/precarious-oral-history#languageNote": {
+      "defaultLabel": "languageNote",
+      "customLabel": "Language Note",
+      "customReverseLabel": "",
+      "hide": true
+    },
+    "https://w3id.org/ro/terms/precarious-oral-history#publiclyAccessible": {
+      "defaultLabel": "publiclyAccessible",
+      "customLabel": "Publicly Accessible",
+      "customReverseLabel": "",
+      "hide": false
+    }
+  },
+  "propertyGroups": [
+    {
+      "name": "About",
+      "help": "The core metadata for this RO-Crate and its subject matter.",
+      "inputs": [
+        "@id",
+        "@type",
+        "http://purl.org/dc/terms/conformsTo",
+        "http://schema.org/name",
+        "http://schema.org/description",
+        "http://schema.org/additionalType",
+        "http://schema.org/datePublished",
+        "http://schema.org/about",
+        "http://schema.org/keywords",
+        "https://schema.org/holdingArchive",
+        "http://schema.org/author",
+        "http://schema.org/accountablePerson",
+        "http://schema.org/url"
+      
+      ]
+    },
+    {
+      "name": "Collection Information",
+      "help": "Detailed description of how entities were created, by whom and with which tools.",
+      "inputs": [
+        "http://schema.org/agent",
+        "http://schema.org/object",
+        "http://schema.org/instrument",
+        "http://schema.org/result",
+        "http://schema.org/participant",
+        "http://schema.org/target",
+        "https://w3id.org/ldac/terms#collectionEventType",
+        "https://w3id.org/ldac/terms#collectionProtocolType",
+        "https://w3id.org/ldac/terms#hasCollectionProtocol",
+        "https://w3id.org/ldac/terms#isDeIdentified",
+        "https://w3id.org/ldac/terms#material",
+        "https://w3id.org/ldac/terms#writtenLanguageFormat",
+        "https://w3id.org/ro/terms/precarious-oral-history#collectionPurpose",
+        "https://w3id.org/ro/terms/precarious-oral-history#storageLocation",
+        "https://w3id.org/ro/terms/precarious-oral-history#catalogueListing",
+        "https://w3id.org/ro/terms/precarious-oral-history#relatedMaterials"
+      ]
+    },
+    {
+      "name": "Language",
+      "help": "Metadata related to the languages used, modes of communication and other linguistic classifications.",
+      "inputs": [
+        "http://schema.org/inLanguage",
+        "https://w3id.org/ldac/terms#subjectLanguage",
+        "https://w3id.org/ldac/terms#communicationMode",
+        "https://w3id.org/ldac/terms#linguisticGenre",
+        "https://w3id.org/ldac/terms#orthographicNotes",
+        "https://w3id.org/ldac/terms#annotationType",
+        "https://w3id.org/ldac/terms#register",
+        "https://w3id.org/ro/terms/precarious-oral-history#languageNote"
+      ]
+    },
+    {
+      "name": "Related People, Orgs & Collections",
+      "help": "The context for the creation of this RO-Crate; who made it, funded it etc.",
+      "inputs": [
+        "http://schema.org/creator",
+        "http://schema.org/publisher",
+        "http://schema.org/funder",
+        "http://schema.org/affiliation",
+        "http://schema.org/citation",
+        "http://purl.org/dc/terms/rightsHolder",
+        "https://w3id.org/ldac/terms#annotator",
+        "https://w3id.org/ldac/terms#compiler",
+        "https://w3id.org/ldac/terms#consultant",
+        "https://w3id.org/ldac/terms#dataInputter",
+        "https://w3id.org/ldac/terms#depositor",
+        "https://w3id.org/ldac/terms#developer",
+        "https://w3id.org/ldac/terms#editor",
+        "https://w3id.org/ldac/terms#illustrator",
+        "https://w3id.org/ldac/terms#interpreter",
+        "https://w3id.org/ldac/terms#interviewee",
+        "https://w3id.org/ldac/terms#interviewer",
+        "https://w3id.org/ldac/terms#participant",
+        "https://w3id.org/ldac/terms#performer",
+        "https://w3id.org/ldac/terms#photographer",
+        "https://w3id.org/ldac/terms#recorder",
+        "https://w3id.org/ldac/terms#researcher",
+        "https://w3id.org/ldac/terms#researchParticipant",
+        "https://w3id.org/ldac/terms#responder",
+        "https://w3id.org/ldac/terms#signer",
+        "https://w3id.org/ldac/terms#singer",
+        "https://w3id.org/ldac/terms#speaker",
+        "https://w3id.org/ldac/terms#sponsor",
+        "https://w3id.org/ldac/terms#transcriber",
+        "https://w3id.org/ldac/terms#translator"
+      ]
+    },
+    {
+      "name": "Structure",
+      "help": "For groups of elements, sutch as DefinedTerms.",
+      "inputs": [
+        "http://pcdm.org/models#hasMember",
+        "http://schema.org/isPartOf",
+        "http://schema.org/hasPart",
+        "https://w3id.org/ldac/terms#annotationOf",
+        "https://w3id.org/ldac/terms#hasAnnotation",
+        "https://w3id.org/ldac/terms#derivationOf",
+        "https://w3id.org/ldac/terms#hasDerivation",
+        "http://schema.org/inDefinedTermSet",
+        "http://schema.org/hasDefinedTerm"
+      ]
+    },
+    {
+      "name": "Space & Time",
+      "help": "Where and when the data was collected; the times and places it mentions or describes.",
+      "inputs": [
+        "http://schema.org/dateCreated",
+        "https://w3id.org/ldac/terms#dateFreeText",
+        "http://schema.org/temporalCoverage",
+        "http://schema.org/spatialCoverage",
+        "http://schema.org/contentLocation",
+        "http://schema.org/locationCreated",
+        "http://schema.org/geo",
+        "http://www.opengis.net/ont/geosparql#asWKT",
+        "http://schema.org/address",
+        "http://schema.org/creativeWorkStatus"
+
+      ]
+    },
+    {
+      "name": "Audio Format & Quality",
+      "help": "The technical characteristics of the audio and audiovisual files.",
+      "inputs": [
+        "https://w3id.org/ro/terms/precarious-oral-history#audiovisualFormat",
+        "https://w3id.org/ro/terms/precarious-oral-history#analogueDigital",
+        "https://w3id.org/ro/terms/precarious-oral-history#audioFormat",
+        "https://w3id.org/ro/terms/precarious-oral-history#avFormat",
+        "https://w3id.org/ro/terms/precarious-oral-history#physicalCondition",
+        "https://w3id.org/ro/terms/precarious-oral-history#audioQuality",
+        "https://w3id.org/ro/terms/precarious-oral-history#transcripts",
+        "https://w3id.org/ro/terms/precarious-oral-history#timedSummaries",
+        "https://w3id.org/ro/terms/precarious-oral-history#overviews",
+        "https://w3id.org/ro/terms/precarious-oral-history#numInterviews",
+        "https://w3id.org/ro/terms/precarious-oral-history#totalHours",
+        "https://w3id.org/ro/terms/precarious-oral-history#avgInterviewLength"
+      ]
+    },
+    {
+      "name": "Access & Permissions",
+      "help": "",
+      "inputs": [
+        "http://schema.org/license",
+        "http://schema.org/creditText",
+        "http://schema.org/usageInfo",
+        "http://schema.org/isAccessibleForFree",
+        "https://w3id.org/ro/terms/precarious-oral-history#consentForms",
+        "https://w3id.org/ro/terms/precarious-oral-history#consentFutureAccess",
+        "https://w3id.org/ro/terms/precarious-oral-history#publiclyAccessible"
+
+      ]
+    }
+  ]
+}

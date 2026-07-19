@@ -4,7 +4,7 @@ This repository contains the RO-Crate metadata and configuration for the Precari
 
 ## Install Dependencies
 
-Run the following command to install `ro-crate-excel` and `ro-crate-html-lite` dependencies.
+Run the following command to install `ro-crate-excel` and `ro-crate-html-lite` dependencies. The current version is using the `tabular-merge` branch of `ro-crate-excel` - this will be updated when the changes are merged into the main branch.
 
 ```bash
 npm install

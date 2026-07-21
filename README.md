@@ -25,9 +25,9 @@ rocxl crate
 Run the following command to build the static HTML site from the RO-Crate metadata.
 
 ```bash
-npx roc-html -c config/detailed-config.json -s config/oral-history.css crate
+npx roc-html -c config/config.json crate
 ```
 
-Any edits to the configuration can be made in `config/detailed-config.json` and edits to style in `config/oral-history.css`.
+Any edits to the configuration can be made in `config/config.json` and edits to style in `config/oral-history.css`.
 
 The output `ro-crate-preview.html` will be generated in the `crate` directory.

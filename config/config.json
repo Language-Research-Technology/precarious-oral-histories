@@ -1,6 +1,6 @@
 {
   "multipage": false,
-  "style": "",
+  "style": "./oral-history.css",
   "settings": {
     "maxListItemsWithoutSearch": 20,
     "showInfoLinks": false,

@@ -2,6 +2,8 @@
 
 This repository contains the RO-Crate metadata and configuration for the Precarious Oral Histories project. The RO-Crate metadata is generated from a spreadsheet and can be used to build a static HTML site.
 
+You can view the Precarious Oral Histories site [here](https://language-research-technology.github.io/precarious-oral-histories).
+
 ## Install Dependencies
 
 Run the following command to install `ro-crate-excel` and `ro-crate-html-lite` dependencies. The current version is using the `tabular-merge` branch of `ro-crate-excel` - this will be updated when the changes are merged into the main branch.
